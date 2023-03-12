@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+
+html,
+body {
+  height: 100%;
+  background: #ffffff;
+  scroll-padding-top: 25px;
+  overflow-x: clip;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+label {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
