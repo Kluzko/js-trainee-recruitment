@@ -9,7 +9,7 @@ type CardProps = {
 };
 
 export const Card = ({ name, title, img, href }: CardProps) => (
-  <div className={styles.card_wrapper} id={href}>
+  <div className={styles.card_wrapper} id={href.slice(1)}>
     <p className={styles.card_annotation}>{name}</p>
     <h1
       className={styles.card_title}
