@@ -8,6 +8,8 @@ export const useIsHashActive = (hash: string) => {
       setIsActive(window.location.hash === hash);
     };
 
+    handleHashChange();
+
     window.addEventListener("hashchange", handleHashChange);
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
