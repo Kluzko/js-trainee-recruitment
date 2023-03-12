@@ -1,10 +1,9 @@
-import { LogoNerdbord } from "components/LogoNerdbord";
+import { Menu } from "components/Menu/Menu";
 
 export default function Home() {
   return (
     <div>
-      <LogoNerdbord />
-      <h1>Recruitment task for Javascript Trainee</h1>
+      <Menu />
     </div>
   );
 }

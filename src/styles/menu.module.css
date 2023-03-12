@@ -1,0 +1,42 @@
+.container {
+  background: #ffffff;
+  height: 500px;
+  width: 318px;
+  border-radius: 2px;
+  position: fixed;
+  left: 100px;
+  top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_header {
+  font-size: 18px;
+  padding: 24px 0 0 24px;
+}
+
+.menu {
+  padding-top: 16px;
+}
+
+.list {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  padding-left: 48px;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.list_active {
+  background-color: #fafafa;
+}
+
+.link {
+  color: #71717a;
+}
+
+.link_active {
+  color: #f97316;
+}
