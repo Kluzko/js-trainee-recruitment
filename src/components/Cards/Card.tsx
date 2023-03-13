@@ -1,4 +1,5 @@
 import styles from "styles/card.module.css";
+import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 
 type CardProps = {
@@ -8,13 +9,12 @@ type CardProps = {
   name: string;
 };
 
+// Instead of dangerouslySetInnerHTML i choose to use more secure solution with React Markdown
+
 export const Card = ({ name, title, img, href }: CardProps) => (
   <div className={styles.card_wrapper} id={href.slice(1)}>
     <p className={styles.card_annotation}>{name}</p>
-    <h1
-      className={styles.card_title}
-      dangerouslySetInnerHTML={{ __html: title }}
-    ></h1>
+    <ReactMarkdown>{title}</ReactMarkdown>
     <Image
       src={img}
       alt={name}
