@@ -21,9 +21,7 @@ const Socials = [
 
 export const Footer = () => (
   <footer className={styles.container}>
-    <div className={styles.logo_container}>
-      <LogoNerdbord />
-    </div>
+    <LogoNerdbord />
     <div className={styles.socials_container}>
       {Socials.map(({ icon, url }, i) => (
         <a href={url} key={i} target="_blank" rel="noopener noreferrer">

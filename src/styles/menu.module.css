@@ -1,8 +1,8 @@
 .container {
   background: #ffffff;
   height: 500px;
-  width: clamp(250px, 50%, 318px);
-  border-radius: 2px;
+  width: 318px;
+  border-radius: var(--border-radious);
   position: fixed;
   left: 100px;
   top: 48px;
@@ -32,15 +32,15 @@
 }
 
 .list_active {
-  background-color: #fafafa;
+  background-color: var(--background-active-link);
 }
 
 .link {
-  color: #71717a;
+  color: var(--text-grey);
 }
 
 .link_active {
-  color: #f97316;
+  color: var(--text-orange);
 }
 
 .menu_icon {
@@ -85,7 +85,7 @@
   .menu_icon span {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: var(--text-dark);
   }
 
   .menu_icon .hamburger_middle {
