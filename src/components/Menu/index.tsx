@@ -2,9 +2,13 @@ import { useState } from "react";
 import styles from "styles/menu.module.css";
 import { MenuItem } from "./MenuItem";
 import { MenuList } from "data";
+import { useGetActiveSection } from "hooks";
 
 export const Menu = () => {
   const [isActive, setIsActive] = useState(false);
+  const activeMenuItem = useGetActiveSection(MenuList);
+  console.log(activeMenuItem);
+
   return (
     <div className={styles.container}>
       <div className={styles.container_header}>
@@ -21,7 +25,12 @@ export const Menu = () => {
 
       <ul className={isActive ? styles.menu_active : styles.menu}>
         {MenuList.map(({ name, href }) => (
-          <MenuItem key={name} name={name} href={href} />
+          <MenuItem
+            key={name}
+            name={name}
+            href={href}
+            isActive={activeMenuItem === href.slice(1)}
+          />
         ))}
       </ul>
     </div>

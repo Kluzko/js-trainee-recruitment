@@ -1,1 +1,1 @@
-export { useIsHashActive } from "./useIsHashActive";
+export { useGetActiveSection } from "./useGetActiveSection";

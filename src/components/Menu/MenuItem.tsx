@@ -1,14 +1,12 @@
-import { useIsHashActive } from "hooks";
 import styles from "styles/menu.module.css";
 
 type MenuItemProps = {
   name: string;
   href: string;
+  isActive: boolean;
 };
 
-export const MenuItem = ({ name, href }: MenuItemProps) => {
-  const isActive = useIsHashActive(href);
-
+export const MenuItem = ({ name, href, isActive }: MenuItemProps) => {
   return (
     <li
       className={
