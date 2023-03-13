@@ -21,8 +21,16 @@
   color: var(--text-dark);
   margin-left: 15px;
   transition: opacity 0.3 ease-out;
+  display: flex;
+  align-items: center;
 }
 
 .socials_container a:hover {
   opacity: 0.85;
+}
+
+@media (max-width: 468px) {
+  .container {
+    padding: 0px 10px;
+  }
 }
