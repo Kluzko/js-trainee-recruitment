@@ -1,8 +1,8 @@
-import styles from "styles/footer.module.css";
+import styles from "./footer.module.css";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { MdWeb } from "react-icons/md";
 
-import { LogoNerdbord } from "./LogoNerdbord";
+import { LogoNerdbord } from "../LogoNerdbord";
 
 const Socials = [
   {

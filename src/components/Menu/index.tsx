@@ -1,12 +1,12 @@
 import { useState, useRef } from "react";
-import styles from "styles/menu.module.css";
+import styles from "./menu.module.css";
 import { MenuItem } from "./MenuItem";
 import { MenuList } from "data";
 import { useGetActiveSection, useOnOuterClick } from "hooks";
 
 export const Menu = () => {
   const [isActive, setIsActive] = useState(false);
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const activeMenuItem = useGetActiveSection(MenuList);
 

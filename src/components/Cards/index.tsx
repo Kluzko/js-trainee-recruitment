@@ -1,11 +1,15 @@
-import styles from "styles/cards.module.css";
+import styles from "./cards.module.css";
 import { Card } from "./Card";
-import { MenuList } from "data";
+import type { MenuList } from "data";
 
-export const Cards = () => (
-  <div className={styles.container}>
-    {MenuList.map(({ name, title, href, img }) => (
+type CardsProps = {
+  menuList: typeof MenuList;
+};
+
+export const Cards = ({ menuList }: CardsProps) => (
+  <ul className={styles.container}>
+    {menuList.map(({ name, title, href, img }) => (
       <Card key={name} name={name} title={title} href={href} img={img} />
     ))}
-  </div>
+  </ul>
 );

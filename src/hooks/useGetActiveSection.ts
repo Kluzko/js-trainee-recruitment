@@ -10,7 +10,7 @@ export const useGetActiveSection = (menuList: MenuListProps) => {
     const scrollPosition = window.scrollY + offset;
 
     const activeItem = menuList.find((item) => {
-      const section = document.querySelector(item.href) as HTMLElement;
+      const section = document.querySelector<HTMLDivElement>(item.href);
       if (section) {
         const sectionTop = section.offsetTop;
         const sectionBottom = sectionTop + section.offsetHeight;

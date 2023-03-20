@@ -2,6 +2,7 @@ import styles from "styles/index.module.css";
 import { Menu } from "components/Menu";
 import { Cards } from "components/Cards";
 import Head from "next/head";
+import { MenuList } from "data";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           <Menu />
         </div>
         <div>
-          <Cards />
+          <Cards menuList={MenuList} />
         </div>
       </div>
     </>
