@@ -1,6 +1,6 @@
-import styles from "./card.module.css";
-import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import styles from "./card.module.css";
 
 type CardProps = {
   title: string;

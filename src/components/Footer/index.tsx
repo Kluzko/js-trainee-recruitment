@@ -1,6 +1,6 @@
-import styles from "./footer.module.css";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { MdWeb } from "react-icons/md";
+import styles from "./footer.module.css";
 
 import { LogoNerdbord } from "../LogoNerdbord";
 

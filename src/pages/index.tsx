@@ -1,8 +1,8 @@
-import styles from "styles/index.module.css";
+import Head from "next/head";
 import { Menu } from "components/Menu";
 import { Cards } from "components/Cards";
-import Head from "next/head";
 import { MenuList } from "data";
+import styles from "styles/index.module.css";
 
 export default function Home() {
   return (

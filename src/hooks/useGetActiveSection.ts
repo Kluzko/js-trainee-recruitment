@@ -1,9 +1,7 @@
-import { MenuList } from "data";
 import { useEffect, useState, useCallback } from "react";
+import type { ListType } from "types";
 
-type MenuListProps = typeof MenuList;
-
-export const useGetActiveSection = (menuList: MenuListProps) => {
+export const useGetActiveSection = (menuList: ListType) => {
   const [activeMenuItem, setActiveMenuItem] = useState("");
   const handleScroll = useCallback(() => {
     const offset = 400;

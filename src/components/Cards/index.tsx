@@ -1,9 +1,9 @@
-import styles from "./cards.module.css";
+import type { ListType } from "types";
 import { Card } from "./Card";
-import type { MenuList } from "data";
+import styles from "./cards.module.css";
 
 type CardsProps = {
-  menuList: typeof MenuList;
+  menuList: ListType;
 };
 
 export const Cards = ({ menuList }: CardsProps) => (

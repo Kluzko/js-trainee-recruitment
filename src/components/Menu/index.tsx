@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
+import { useGetActiveSection, useOnOuterClick } from "hooks";
+import { MenuList } from "data";
 import styles from "./menu.module.css";
 import { MenuItem } from "./MenuItem";
-import { MenuList } from "data";
-import { useGetActiveSection, useOnOuterClick } from "hooks";
 
 export const Menu = () => {
   const [isActive, setIsActive] = useState(false);
